@@ -79,6 +79,7 @@ var AppHelpFlagGroups = []flagGroup{
 			utils.LightServFlag,
 			utils.LightPeersFlag,
 			utils.LightKDFFlag,
+			utils.TitanFlag,
 		},
 	},
 	{
@@ -203,6 +204,12 @@ var AppHelpFlagGroups = []flagGroup{
 	},
 	{
 		Name: "MISC",
+	},
+	{
+		Name: "Titan",
+		Flags: []cli.Flag{
+			utils.EnableNodePermissionFlag,
+		},
 	},
 }
 
